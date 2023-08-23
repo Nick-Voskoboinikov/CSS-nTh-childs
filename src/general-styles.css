@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(
+        to bottom right,
+        #333333, #121212);
+    color: #728692;
+    min-height: 100dvh;
+    overflow: hidden;
+}
+section {
+    min-height: 90dvh;
+    overflow-y: auto;
+}
+
+/* scrollbar description */
+/* width */
+section::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  section::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px transparent; 
+    border-radius: 3px;
+  }
+  /* Handle */
+  section::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        to top left,
+        #333333, #121212);
+    border-radius: 5px;
+  }
+  /* Handle on hover */
+  section::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+        to bottom right,
+        #333333, #121212);
+    border: 1px solid green;
+  }
+
+
+.tablewrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tablewrapper:has(table) {
+    min-width: 540px;
+}
+footer{
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: yellow;
+}
+tr th {
+    text-transform:uppercase;
+    text-align: center;
+    color: seashell;
+}
+tr>td:nth-child(2) {
+    display: -webkit-inline-box;
+    text-align: center;
+}
+td > div {
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid #4380DD;
+    border-radius: 5px;
+    margin-left: 3px;
+    color: white;
+}
+tr td, tr th{
+    cursor: cell;
+}
+td.selector {
+    cursor: copy;
+    border-radius: 5px;
+}
+
+/* tooltip text */
+.tooltiptext {
+    margin-top: 1.15rem;
+    width: 170px;
+    background-color: peachpuff;
+    color: #0f0f0f;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position:fixed;
+    z-index: 1;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+ /* just numbers */
+td > div::after {
+    display: block;
+    padding-top: 5px;
+    padding-left: 1px;
+}
+td > div:nth-child(1)::after {content: '1';}
+td > div:nth-child(2)::after {content: '2';}
+td > div:nth-child(3)::after {content: '3';}
+td > div:nth-child(4)::after {content: '4';}
+td > div:nth-child(5)::after {content: '5';}
+td > div:nth-child(6)::after {content: '6';}
+td > div:nth-child(7)::after {content: '7';}
+td > div:nth-child(8)::after {content: '8';}
+td > div:nth-child(9)::after {content: '9';}
+td > div:nth-child(10)::after {content: '10';}

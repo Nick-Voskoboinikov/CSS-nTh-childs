@@ -4,47 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nᵗʰ Child Selectors</title>
+    <link rel="stylesheet" href="./src/general-styles.css">
     <link rel="stylesheet" href="./nth-child-selectors.css">
     
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.0&quot; width=&quot;16.000000pt&quot; height=&quot;16.000000pt&quot; viewBox=&quot;0 0 256.000000 256.000000&quot; preserveAspectRatio=&quot;xMidYMid meet&quot;><g transform=&quot;translate(0.000000,256.000000) scale(0.100000,-0.100000)&quot; fill=&quot;%230074BE&quot; stroke=&quot;none&quot;><path d=&quot;M300 2380 c0 -64 162 -1986 168 -1991 9 -7 803 -229 820 -229 19 0 785 222 794 229 6 6 178 1927 178 1990 l0 21 -980 0 c-976 0 -980 0 -980 -20z m1600 -524 l0 -123 -275 -114 -274 -114 252 -3 252 -2 -32 -381 c-17 -210 -33 -382 -35 -384 -2 -1 -114 -37 -250 -80 l-247 -78 -257 71 c-141 39 -260 74 -263 77 -7 8 -38 384 -32 391 2 2 57 4 122 4 l117 0 6 -28 c2 -15 8 -57 11 -95 6 -62 9 -68 33 -74 15 -3 74 -18 131 -33 l104 -26 140 28 c77 15 141 29 143 31 2 1 8 52 13 112 6 61 14 131 17 157 l6 48 -429 2 -428 3 -12 70 c-6 39 -14 93 -17 120 l-6 50 282 120 282 120 -287 3 -286 2 -5 33 c-14 83 -26 178 -26 196 0 21 1 21 625 21 l625 0 0 -124z&quot;/></g></svg>">
-    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.0&quot; width=&quot;16.000000pt&quot; height=&quot;16.000000pt&quot; viewBox=&quot;0 0 256.000000 256.000000&quot; preserveAspectRatio=&quot;xMidYMid meet&quot;><g transform=&quot;translate(0.000000,256.000000) scale(0.100000,-0.100000)&quot; fill=&quot;%230074BE&quot; stroke=&quot;none&quot;><path d=&quot;M300 2380 c0 -64 162 -1986 168 -1991 9 -7 803 -229 820 -229 19 0 785 222 794 229 6 6 178 1927 178 1990 l0 21 -980 0 c-976 0 -980 0 -980 -20z m1600 -524 l0 -123 -275 -114 -274 -114 252 -3 252 -2 -32 -381 c-17 -210 -33 -382 -35 -384 -2 -1 -114 -37 -250 -80 l-247 -78 -257 71 c-141 39 -260 74 -263 77 -7 8 -38 384 -32 391 2 2 57 4 122 4 l117 0 6 -28 c2 -15 8 -57 11 -95 6 -62 9 -68 33 -74 15 -3 74 -18 131 -33 l104 -26 140 28 c77 15 141 29 143 31 2 1 8 52 13 112 6 61 14 131 17 157 l6 48 -429 2 -428 3 -12 70 c-6 39 -14 93 -17 120 l-6 50 282 120 282 120 -287 3 -286 2 -5 33 c-14 83 -26 178 -26 196 0 21 1 21 625 21 l625 0 0 -124z&quot;/></g></svg>" >
+<script src="./src/index.js"></script>
 <body>
     <section>
-        <table>
+        <h1>CSS n<sup><u>th</u></sup> Child Selectors</h1>
+        <div class="tablewrapper">
+            <table>
             <tr>
-                <th colspan="2">CSS n<sup>th</sup> Child Selectors</th>
+                <th>selector</th><th>its effect</th>
             </tr>
             <tr>
-                <td>:first-child</td><td class="primo"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></td>
+                <td class="selector" >:first-child</td>
+                <td class="primo">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </td>
             </tr>
             <tr>
-                <td>:last-child</td><td class="secundo"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></td>
+                <td class="selector">:last-child</td>
+                <td class="secundo">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </td>
             </tr>
             <tr>
-                <td>:nth-child(2)</td><td class="tertio"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></td>
+                <td class="selector">:nth-child(2)</td>
+                <td class="tertio">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </td>
             </tr>
             <tr>
-                <td>:nth-last-child(2)</td><td class="quarto"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></td>
+                <td class="selector">:nth-last-child(2)</td>
+                <td class="quarto">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </td>
             </tr>
             <tr>
-                <td>:nth-child(odd)</td><td class="quinto"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></td>
+                <td class="selector">:nth-child(odd)</td>
+                <td class="quinto">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </td>
             </tr>
             <tr>
-                <td>:nth-child(even)</td><td class="sexto"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></td>
+                <td class="selector">:nth-child(even)</td>
+                <td class="sexto">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </td>
             </tr>
             <tr>
-                <td>:nth-child(n+4)</td><td class="septimo"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></td>
+                <td class="selector">:nth-child(n+4)</td>
+                <td class="septimo">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </td>
             </tr>
             <tr>
-                <td>:nth-child(3n-1)</td><td class="octavo"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></td>
+                <td class="selector">:nth-child(3n-1)</td>
+                <td class="octavo">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </td>
             </tr>
             <tr>
-                <td>:nth-child(3n+1)</td><td class="nono"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></td>
+                <td class="selector">:nth-child(3n+1)</td>
+                <td class="nono">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </td>
             </tr>
             <tr>
-                <td>:nth-child(4n)</td><td class="decimo"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></td>
+                <td class="selector">:nth-child(4n)</td>
+                <td class="decimo">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </td>
             </tr>
         </table>
+    </div>
     </section>
+    <footer>
+        <span class="tooltiptext" >Copy to clipboard</span>
+    </footer>
 </body>
 </html>
