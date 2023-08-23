@@ -1,5 +1,15 @@
 window.addEventListener('DOMContentLoaded',() => {
-    const selectors =  document.querySelectorAll('td.selector');
+    const selectors = document.querySelectorAll('td.selector');
+    const testareas=document.querySelectorAll('td:not(.selector)');
+
+    testareas.forEach((testarea) => {
+        for (let i=0; i<10; i++){
+            const sample = document.createDocumentFragment();
+            const div = sample.appendChild(document.createElement('div'));
+            testarea.appendChild(sample);
+        }
+    });
+
     selectors.forEach((selector) => {
         selector.setAttribute('title', 'Click to copy');
         selector.addEventListener('click', (event) => {
@@ -24,4 +34,4 @@ window.addEventListener('DOMContentLoaded',() => {
     
       });
     });
-    });
+});
