@@ -107,6 +107,7 @@ tr>td:nth-child(2) > div {
     border-radius: 5px;
     margin-left: 3px;
     color: var(--aspect-color, seashell);
+    text-align: center;
 }
 tr td, tr th{
     cursor: cell;
@@ -114,7 +115,6 @@ tr td, tr th{
 }
 td.selector {
     cursor: copy;
-    border-radius: 5px;
 }
 
 /* tooltip text */
@@ -186,6 +186,9 @@ tr>td:nth-child(2)> div:nth-child(10)::after {content: '10';}
     }
     tr:hover > td:last-child  {
         border-bottom: 1px solid var(--aspect-color, seashell);
+    }
+    tr>td:nth-child(2) {
+        text-align: left;
     }
 }
 @media (min-width: 616px){
