@@ -33,7 +33,7 @@ section::-webkit-scrollbar {
     background: linear-gradient(
         to bottom right,
         #333333, #121212);
-    border: 1px solid green;
+    border: 1px solid seashell;
   }
 
 
@@ -52,8 +52,11 @@ h1 {
     text-align: center;
     color: yellow;
 }
+table, tbody{
+    border-collapse: collapse;
+}
 tr th {
-    text-transform:uppercase;
+    text-transform: uppercase;
     text-align: center;
     color: seashell;
 }
@@ -67,7 +70,7 @@ td > div {
     border: 3px solid #4380DD;
     border-radius: 5px;
     margin-left: 3px;
-    color: white;
+    color: seashell;
 }
 tr td, tr th{
     cursor: cell;
@@ -75,6 +78,16 @@ tr td, tr th{
 td.selector {
     cursor: copy;
     border-radius: 5px;
+}
+tr:hover td  {
+    border-top: 1px solid seashell;
+    border-bottom: 1px solid seashell;
+}
+tr:hover > td:first-child  {
+    border-left: 1px solid seashell;
+}
+tr:hover > td:last-child  {
+    border-right: 1px solid seashell;
 }
 
 /* tooltip text */
