@@ -9,3 +9,4 @@
 .nono>div:nth-child(3n+1) {background-color: #4380DD;}
 .decimo>div:nth-child(4n) {background-color: #4380DD;}
 .undecimo>:nth-child(3 of div) {background-color: #4380DD;}
+.duodecimo>:nth-child(2n of div) {background-color: #4380DD;}
