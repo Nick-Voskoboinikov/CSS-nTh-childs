@@ -189,6 +189,9 @@ tr>td:nth-child(2)> div:nth-child(10)::after {content: '10';}
     }
 }
 @media (min-width: 616px){
+    table {
+        margin-top: 2em;
+    }
     tr:hover td  {
         background-color: hsl(0 0% 0% / .5);
         border-top: 1px solid var(--aspect-color, seashell);
